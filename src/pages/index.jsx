@@ -1,37 +1,59 @@
 import React from "react";
-import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 
 //features
 import colors from "../features/colors";
 
-export default function Index() {
+export default function Index({ navigation }) {
+  const goToAuth = () => {
+    navigation.navigate("Login");
+  };
+
   return (
-    <ImageBackground
-      style={styles.container}
-      source={require("../../assets/images/background.png")}
-      resizeMethod="cover"
-    >
-      <Text style={styles.title}>
-        Switch to {"\n"} <Text style={styles.span}>Pagar</Text>
-      </Text>
-      <Image source={require("../../assets/images/one.png")} />
-      <Text style={styles.text}>
-        Reference site about Lorem Ipsum, giving {"\n"} information on its
-        origins, as well as a random
-      </Text>
-      <View style={styles.button}>
-        <Image
-          source={require("../../assets/icons/apply.png")}
-          style={styles.icon}
-        />
-        <Text style={styles.iconText}>Apply for a loan</Text>
-      </View>
-    </ImageBackground>
+    <View style={styles.container}>
+      <ImageBackground
+        style={styles.background}
+        source={require("../../assets/images/background.png")}
+        resizeMethod="resize"
+      >
+        <Text style={styles.title}>
+          Switch to {"\n"} <Text style={styles.span}>Pagar</Text>
+        </Text>
+        <Image source={require("../../assets/images/one.png")} />
+        <Text style={styles.text}>
+          Reference site about Lorem Ipsum, giving {"\n"} information on its
+          origins, as well as a random
+        </Text>
+        <Pressable onPress={goToAuth}>
+          <View style={styles.button}>
+            <Image
+              source={require("../../assets/icons/apply.png")}
+              style={styles.icon}
+            />
+            <Text style={styles.iconText}>Apply for a loan</Text>
+          </View>
+        </Pressable>
+      </ImageBackground>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    flex: 1,
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  background: {
     width: "100%",
     flex: 1,
     flexDirection: "column",
