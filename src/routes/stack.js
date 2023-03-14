@@ -8,6 +8,7 @@ import colors from "../features/colors";
 import Index from "../pages";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
+import DDashboard from "../pages/debtor/dashboard";
 
 //routes
 const screens = {
@@ -19,6 +20,9 @@ const screens = {
   },
   Signup: {
     screen: Signup,
+  },
+  DDashboard: {
+    screen: DDashboard,
   },
 };
 

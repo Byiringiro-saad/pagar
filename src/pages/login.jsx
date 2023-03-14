@@ -31,8 +31,8 @@ export default function Login({ navigation }) {
     navigation.navigate("Signup");
   };
 
-  const goWelcome = () => {
-    navigation.navigate("Welcome");
+  const goDashboard = () => {
+    navigation.navigate("DDashboard");
   };
 
   return (
@@ -66,9 +66,9 @@ export default function Login({ navigation }) {
             placeholder="Enter password"
             placeholderTextColor={colors.grayish}
           />
-          <View style={styles.login}>
+          <Pressable style={styles.login} onPress={goDashboard}>
             <Text style={styles.loginText}>Login</Text>
-          </View>
+          </Pressable>
         </View>
       </View>
     </View>

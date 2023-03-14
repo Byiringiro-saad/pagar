@@ -4,4 +4,5 @@ export default colors = {
   green: "#109C6B",
   gray: "#1F1B24",
   grayish: "#717171",
+  bluish: "#CCE8DE",
 };
