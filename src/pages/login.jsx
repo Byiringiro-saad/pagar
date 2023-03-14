@@ -32,7 +32,7 @@ export default function Login({ navigation }) {
   };
 
   const goDashboard = () => {
-    navigation.navigate("DDashboard");
+    navigation.navigate("Dashboard");
   };
 
   return (

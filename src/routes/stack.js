@@ -8,7 +8,7 @@ import colors from "../features/colors";
 import Index from "../pages";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
-import DDashboard from "../pages/debtor/dashboard";
+import Dashboard from "../pages/dashboard/dashboard";
 
 //routes
 const screens = {
@@ -21,8 +21,8 @@ const screens = {
   Signup: {
     screen: Signup,
   },
-  DDashboard: {
-    screen: DDashboard,
+  Dashboard: {
+    screen: Dashboard,
   },
 };
 
