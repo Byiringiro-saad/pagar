@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-end",
+    backgroundColor: colors.white,
   },
   background: {
     width: "100%",
@@ -64,13 +65,13 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textAlign: "center",
     fontWeight: "bold",
-    color: colors.white,
+    color: colors.dark,
   },
   span: {
     color: colors.green,
   },
   text: {
-    color: colors.white,
+    color: colors.dark,
     textAlign: "center",
   },
   button: {

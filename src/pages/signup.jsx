@@ -95,6 +95,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: colors.white,
   },
   top: {
     width: "100%",
@@ -144,11 +145,12 @@ const styles = StyleSheet.create({
   input: {
     width: 350,
     height: 45,
-    color: colors.white,
-    backgroundColor: colors.gray,
+    color: colors.dark,
+    backgroundColor: colors.white,
     paddingStart: 15,
     marginBottom: 20,
     borderRadius: 5,
+    borderWidth: 1,
   },
   login: {
     width: "100%",
